@@ -1,0 +1,11 @@
+
+data <- c(120, 30, 500, 70, 1000)
+
+max_abs <- max(abs(data))
+
+
+power <- floor(log10(max_abs))
+
+scaled_data <- data / (10 ^ power)
+
+print(scaled_data)
