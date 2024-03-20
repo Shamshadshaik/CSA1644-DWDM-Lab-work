@@ -1,0 +1,6 @@
+
+sizes <- c(80, 100, 120)  # Sizes of the slices
+labels <- c("vyshu", "laswi", "anju")  # Labels for the slices
+
+
+pie(sizes, labels = labels, main = "Pie Chart Example")
