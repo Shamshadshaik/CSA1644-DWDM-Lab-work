@@ -1,0 +1,8 @@
+
+number <- 64
+
+
+sqrt_value <- sqrt(number)
+
+
+print(paste("Square root of", number, "is", sqrt_value))
