@@ -1,0 +1,17 @@
+
+install.packages("randomForest")
+library(randomForest)
+
+data(iris)
+
+set.seed(123)
+train_index <- sample(1:nrow(iris), 0.7 * nrow(iris))
+train_data <- iris[train_index, ]
+test_data <- iris[-train_index, ]
+
+rf_model <- randomForest(Species ~ ., data = train_data)
+
+predictions <- predict(rf_model, test_data
+
+accuracy <- mean(predictions == test_data$Species)
+print(paste("Accuracy:", accuracy))
