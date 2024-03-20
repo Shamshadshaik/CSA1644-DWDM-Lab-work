@@ -1,0 +1,14 @@
+
+if (!requireNamespace("arules", quietly = TRUE)) {
+  install.packages("arules")
+}
+library(arules)
+
+
+data("Groceries")
+
+
+rules <- apriori(Groceries, parameter = list(supp = 0.001, conf = 0.8))
+
+
+inspect(head(rules, n = 2))
