@@ -1,0 +1,9 @@
+
+predictions <- c("A", "B", "C", "A", "C", "B", "C", "A", "B", "C")
+actual <- c("A", "B", "C", "A", "C", "B", "C", "A", "B", "B")
+
+
+conf_matrix <- table(predictions, actual)
+
+print("Confusion Matrix:")
+print(conf_matrix)
