@@ -1,0 +1,6 @@
+
+observed <- matrix(c(20, 30, 15, 25), nrow = 2, byrow = TRUE)  
+
+chi_square_result <- chisq.test(observed)
+
+print(chi_square_result)
