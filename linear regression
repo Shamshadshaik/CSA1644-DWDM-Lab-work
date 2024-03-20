@@ -1,0 +1,3 @@
+new_x <- c(6, 7, 8)
+predictions <- predict(model, newdata = data.frame(x = new_x))
+print(predictions)
